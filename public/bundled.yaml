@@ -4,9 +4,6 @@ info:
   version: 1.0.0
 servers:
   - url: http://localhost:3000
-    description: Local deployment server
-  - url: https://task-api-m5ka.onrender.com
-    description: Render deployment server
 tags:
   - name: Tasks
     description: Task-related endpoints
