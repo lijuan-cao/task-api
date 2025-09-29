@@ -1,0 +1,40 @@
+{
+  "name": "task-api",
+  "version": "1.0.0",
+  "description": "A simple Node.js + Express + Prisma API for managing tasks",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --env-file=.env --watch src/server.js",
+    "start": "node src/server.js",
+    "migrate:dev": "npx prisma migrate dev",
+    "migrate:deploy": "npx prisma migrate deploy",
+    "seed": "node prisma/seed.js"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "prisma",
+    "postgres",
+    "api",
+    "tasks"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@prisma/client": "^6.16.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "morgan": "^1.10.1",
+    "uninstall": "^0.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "prisma": "^6.16.2"
+  }
+}
